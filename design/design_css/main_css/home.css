@@ -56,7 +56,7 @@
     }
     36%{
         opacity: 1;
-        content: "a place where I talk about my journeys,"
+        content: "a place where I talk about my journeys,";
     }
     43%{
         opacity: 0;
@@ -78,9 +78,9 @@
     }
     87%{
         opacity: 1;
-        content: "I hope you enjoy and have a nice day :)."
+        content: "I hope you enjoy and have a nice day :).";
     }
-    94%{
+    93%{
         opacity: 0;
     }
 }
@@ -123,8 +123,72 @@
         background-image: url(../image/sixth_friends.jpg);
     }
 
-    94%{
+    93%{
         opacity: 0;
+    }
+}
+
+@media screen and (max-width:500px){
+    @keyframes slide-text {
+        9%{
+            opacity: 0;
+        }
+        18%{
+            opacity: 1;
+            content: "THANK YOU FOR COMING BY MY BLOG";
+        }
+        27%{
+            opacity: 0;
+        }
+        36%{
+            opacity: 1;
+            content: "a place where I talk \a about my journeys,";
+            white-space: pre;
+        }
+        43%{
+            opacity: 0;
+            
+        }
+        50%{
+            opacity: 1;
+            content: "some progresses I make,"
+        }
+        58%{
+            opacity: 0;
+        }
+        67%{
+            opacity: 1;
+            content: "and some activities I do."
+        }
+        77%{
+            opacity: 0;
+        }
+        87%{
+            opacity: 1;
+            content: "I hope you enjoy \a and have a nice day :).";
+            white-space: pre;
+        }
+        93%{
+            opacity: 0;
+        }
+    }
+   
+    .line{
+        margin-top: 50px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .picture{
+        padding: 0;
+        margin-top: 0;
+        height: 300px;
+        width: 380px;
+    }
+
+    .content {
+        grid-template-columns: 1fr minmax(800px 4fr) 1fr;
+        grid-template-rows: 0.5fr minmax(500px 0.5fr) 1fr;
     }
 }
 
