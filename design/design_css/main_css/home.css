@@ -1,0 +1,130 @@
+
+
+.content {
+    background-image: url(../image/ub_background.jpg);
+    background-color: #333;
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-top: 100px;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 1fr minmax(800px 4fr) 1fr;
+    grid-template-rows: 0.5fr minmax(500px 1fr) 1fr;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.line {
+    grid-column: 2 / 3;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.content .line:before {
+    color: white;
+    content: "Hey, there \a What's Up?";
+    white-space: pre;
+    animation: slide-text 35s ease-in-out infinite;
+}
+
+.picture {
+    background-color: black;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    height: 600px;
+    width: 1000px;
+    padding: 10px;
+    background-image: url(../image/first_sunset.jpg);
+    background-size: cover;
+    animation: slide-picture 35s ease-in-out infinite ;
+}
+
+@keyframes slide-text {
+    9%{
+        opacity: 0;
+    }
+    18%{
+        opacity: 1;
+        content: "THANK YOU FOR COMING BY MY BLOG";
+    }
+    27%{
+        opacity: 0;
+    }
+    36%{
+        opacity: 1;
+        content: "a place where I talk about my journeys,"
+    }
+    43%{
+        opacity: 0;
+        
+    }
+    50%{
+        opacity: 1;
+        content: "some progresses I make,"
+    }
+    58%{
+        opacity: 0;
+    }
+    67%{
+        opacity: 1;
+        content: "and some activities I do."
+    }
+    77%{
+        opacity: 0;
+    }
+    87%{
+        opacity: 1;
+        content: "I hope you enjoy and have a nice day :)."
+    }
+    94%{
+        opacity: 0;
+    }
+}
+
+@keyframes slide-picture {
+    9%{
+        opacity: 0;
+    }
+    18%{
+        opacity: 1;
+        background-image: url(../image/second_habamas.png);
+    }
+    27%{
+        opacity: 0;
+    }
+    36%{
+        opacity: 1;
+        background-image: url(../image/thrid_journey.jpg);
+    }
+    43%{
+        opacity: 0;
+        
+    }
+    50%{
+        opacity: 1;
+        background-image: url(../image/fourth_us.jpg);
+    }
+    58%{
+        opacity: 0;
+    }
+    67%{
+        opacity: 1;
+        background-image: url(../image/fifth_acitivty.jpg);
+    }
+    77%{
+        opacity: 0;
+    }
+    87%{
+        opacity: 1;
+        background-image: url(../image/sixth_friends.jpg);
+    }
+
+    94%{
+        opacity: 0;
+    }
+}
+
